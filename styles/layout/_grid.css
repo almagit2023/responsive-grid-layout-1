@@ -4,8 +4,15 @@
 }
 
 .row .row__col-1-of-2 {
-  width: calc((100% - 3.2rem) / 2);
+  width: calc((100% - 6rem) / 2);
+}
 
+.row .row__col-1-of-3 {
+  width: calc((100% - 2 * 3.2rem) / 3);
+}
+
+.row .row__col-2-of-3 {
+  width: calc(2 * (100% - 2 * 3.2rem) / 3 + 3.2rem);
 }
 
 .row::after {

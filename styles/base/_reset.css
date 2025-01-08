@@ -51,4 +51,5 @@ html {
 
 body {
   font-family: var(--primary-font-family);
+  background-color: black
 }
