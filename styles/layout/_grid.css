@@ -1,18 +1,21 @@
 .row {
-  max-width: 125.2rem;
+  max-width: var(--main-container-max-width);
   margin: 0 auto;
+  position: relative;
 }
 
+
+
 .row .row__col-1-of-2 {
-  width: calc((100% - 6rem) / 2);
+  width: calc((100% - var(--gutter-horizontal-width)) / 2);
 }
 
 .row .row__col-1-of-3 {
-  width: calc((100% - 2 * 3.2rem) / 3);
+  width: calc((100% - 2 * var(--gutter-horizontal-width)) / 3);
 }
 
 .row .row__col-2-of-3 {
-  width: calc(2 * (100% - 2 * 3.2rem) / 3 + 3.2rem);
+  width: calc(2 * (100% - 2 * var(--gutter-horizontal-width)) / 3 + var(--gutter-horizontal-width));
 }
 
 .row::after {
@@ -21,11 +24,11 @@
   clear: both;
 }
 
-.row [class^=row__col-] {
-  float: left;
-  background-color: lightgrey;
-}
 
 .row [class^=row__col-]:not(:last-child) {
-  margin-right: 3.2rem;
+  margin-right: var(--gutter-horizontal-width);
+}
+
+.row [class*=row__col-] {
+  float: left;
 }

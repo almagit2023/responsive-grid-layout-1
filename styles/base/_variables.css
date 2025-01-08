@@ -1,4 +1,24 @@
 :root {
+  --main-container-max-width: 125.2rem;
+
   --base-font-size: 62.5%;
-  --primary-font-family: Tahoma, sans-serif;
+
+  --primary-font-family: 'Parkinsans', sans-serif;
+  --primary-heading-h1: 4.8rem;
+  --primary-sub-heading-h4: 2.765rem;
+
+  --gutter-horizontal-width: 3.2rem;
+
+
+  --primary-background-color: rgba(0, 0, 0, 1);
+  --background-overlay-color: rgba(0, 0, 0, 0.75);
+  --primary-main-heading-color: rgba(255, 255, 255, 0.85);
+  --primary-subheading-color: #3395ff;
+  --primary-subheading-weight: 400;
+
+  --primary-button-background: #007BFF;
+  --primary-button-text-color: rgba(255, 255, 255);
+  --primary-button-hover-border-color: #003166;
+
+  --form-background-color: #ECECEC;
 }

@@ -1,0 +1,21 @@
+.header {
+  position: relative;
+  z-index: 3;
+  background-color: var(--primary-background-color);
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  border: 4px solid var(--primary-subheading-color);
+  margin-top: 4%;
+}
+
+.header h1 {
+  color: var(--primary-main-heading-color);
+}
+
+.header h4 {
+  color: var(--primary-subheading-color);
+}
+
+.row__main-heading {}
+
+.row__subheading {}

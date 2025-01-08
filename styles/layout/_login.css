@@ -1,0 +1,21 @@
+.login-form {
+  position: absolute;
+  z-index: 3;
+  top: 33rem;
+}
+
+.login-form h1 {
+  color: var(--primary-background-color);
+}
+
+.input-group {
+  margin-top: 2rem;
+}
+
+.input-group__label {
+  font-size: 1.6rem;
+}
+
+.login-button {
+  margin-top: 1.6rem;
+}
