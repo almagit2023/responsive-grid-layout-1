@@ -5,13 +5,14 @@
 
   --primary-font-family: 'Parkinsans', sans-serif;
   --primary-heading-h1: 4.8rem;
+  --primary-heading-h2: 3.98rem;
   --primary-sub-heading-h4: 2.765rem;
 
   --gutter-horizontal-width: 3.2rem;
 
 
   --primary-background-color: rgba(0, 0, 0, 1);
-  --background-overlay-color: rgba(0, 0, 0, 0.75);
+  --background-overlay-color: rgba(0, 0, 0, 0.85);
   --primary-main-heading-color: rgba(255, 255, 255, 0.85);
   --primary-subheading-color: #3395ff;
   --primary-subheading-weight: 400;
@@ -21,4 +22,5 @@
   --primary-button-hover-border-color: #003166;
 
   --form-background-color: #ECECEC;
+  --dark-grey-color: #6C757D;
 }
