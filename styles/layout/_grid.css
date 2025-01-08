@@ -1,0 +1,24 @@
+.row {
+  max-width: 125.2rem;
+  margin: 0 auto;
+}
+
+.row .row__col-1-of-2 {
+  width: calc((100% - 3.2rem) / 2);
+
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row [class^=row__col-] {
+  float: left;
+  background-color: lightgrey;
+}
+
+.row [class^=row__col-]:not(:last-child) {
+  margin-right: 3.2rem;
+}
