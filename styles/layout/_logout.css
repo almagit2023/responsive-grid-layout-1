@@ -1,0 +1,7 @@
+.logout-form {
+  position: absolute;
+  left: 68%;
+  top: 55%;
+  /* z-index: 3; */
+  height: 50rem;
+}

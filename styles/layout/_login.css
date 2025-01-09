@@ -2,6 +2,7 @@
   position: absolute;
   z-index: 3;
   top: 33rem;
+  height: 42rem;
 }
 
 .login-form h2 {
@@ -21,15 +22,4 @@
   margin-top: 1.6rem;
   float: left;
   display: block;
-}
-
-.login-buttons__checkbox--toggle {
-  float: right;
-  display: block;
-}
-
-.login-buttons__box {
-  background-color: var(--neutral-dark-gray-color);
-  width: 5.4rem;
-  height: 3.2rem;
 }

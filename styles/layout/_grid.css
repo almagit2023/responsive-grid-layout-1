@@ -4,8 +4,6 @@
   position: relative;
 }
 
-
-
 .row .row__col-1-of-2 {
   width: calc((100% - var(--gutter-horizontal-width)) / 2);
 }

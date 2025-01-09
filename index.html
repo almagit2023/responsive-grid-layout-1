@@ -26,6 +26,10 @@
         </div>
 
         <div class="row__col-1-of-3">
+          <div class="toggle-button">
+            <input type="checkbox" value="toggle" id="check" class="toggle-button__checkbox">
+            <label for="check" class="toggle-button__box"></label>
+          </div>
           <form class="login-form" action="#">
             <h2>Log In</h2>
             <div class="input-group">
@@ -41,8 +45,28 @@
             </div>
             <div class="login-buttons">
               <input type="submit" value="Login" class="btn btn--primary login-buttons__primary-btn--login">
-              <input type="checkbox" value="toggle" id="check" class="login-buttons__checkbox--toggle">
-              <label for="check" class="login-buttons__box"></label>
+            </div>
+          </form>
+          <form class="logout-form" action="#">
+            <h2>Sign up</h2>
+            <div class="input-group">
+              <label class="input-group__label">Email</label>
+              <input class="input-group__text input-group__text--email" type="Email" id="email" name="email"
+                required><br><br>
+            </div>
+
+            <div class="input-group">
+              <label class="input-group__label">Password</label>
+              <input class="input-group__text input-group__text--password" type="Password" id="password" name="password"
+                required><br><br>
+            </div>
+            <div class="input-group">
+              <label class="input-group__label">Confirm Password</label>
+              <input class="input-group__text input-group__text--password" type="Password" id="password" name="password"
+                required><br><br>
+            </div>
+            <div class="Signup-buttons">
+              <input type="submit" value="Login" class="btn btn--primary Signup-buttons__primary-btn--Signup">
             </div>
           </form>
         </div>

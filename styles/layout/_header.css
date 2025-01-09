@@ -6,6 +6,8 @@
   border-radius: 1rem;
   border: 1px solid var(--primary-subheading-color);
   margin-top: 4%;
+  width: 78%;
+  text-align: center;
 }
 
 .header h1 {
