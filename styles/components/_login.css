@@ -1,8 +1,6 @@
 .login-form {
-  position: absolute;
-  z-index: 3;
-  top: 33rem;
   height: 42rem;
+  transform: translateX(0);
 }
 
 .login-form h2 {

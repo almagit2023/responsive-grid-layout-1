@@ -1,0 +1,10 @@
+.signup-form {
+  height: 50rem;
+  transform: translateX(100%);
+}
+
+.signup-buttons__primary-btn--signup {
+  margin-top: 8rem;
+  float: left;
+  display: block;
+}

@@ -19,63 +19,63 @@
         <div class="row__col-2-of-3">
           <div class="header">
             <h1 class="row__main-heading">Welcome To Forum-Net</h1>
-            <h4 class="row__subheading">Share your thoughts, connect with people</h4>
+            <h4 class="row__subheading">Connect with people, Share your thoughts</h4>
           </div>
-
           <img src="./assets/svg/network-2.svg" class="svg-network">
         </div>
 
-        <div class="row__col-1-of-3">
-          <div class="toggle-button">
-            <input type="checkbox" value="toggle" id="check" class="toggle-button__checkbox">
-            <label for="check" class="toggle-button__box"></label>
-          </div>
-          <form class="login-form" action="#">
+        <!-- Toggle Button start -->
+        <div class="toggle-button">
+          <input type="checkbox" id="check" class="toggle-button__checkbox">
+          <label for="check" class="toggle-button__box"></label>
+        </div>
+        <!-- Toggle Button end -->
+
+
+
+        <div class="forms row__col-1-of-3">
+
+          <!-- Login form starts here -->
+          <form class="login-form">
             <h2>Log In</h2>
             <div class="input-group">
               <label class="input-group__label">Email</label>
-              <input class="input-group__text input-group__text--email" type="Email" id="email" name="email"
-                required><br><br>
+              <input class="input-group__text" type="email" required>
             </div>
-
             <div class="input-group">
               <label class="input-group__label">Password</label>
-              <input class="input-group__text input-group__text--password" type="Password" id="password" name="password"
-                required><br><br>
+              <input class="input-group__text" type="password" required>
             </div>
-            <div class="login-buttons">
-              <input type="submit" value="Login" class="btn btn--primary login-buttons__primary-btn--login">
-            </div>
+            <button type="submit" class="btn btn--primary login-buttons__primary-btn--login">Login</button>
           </form>
-          <form class="logout-form" action="#">
-            <h2>Sign up</h2>
+          <!-- Login form ends here -->
+
+          <!-- Signup form starts here -->
+          <form class="signup-form">
+            <h2>Sign Up</h2>
             <div class="input-group">
               <label class="input-group__label">Email</label>
-              <input class="input-group__text input-group__text--email" type="Email" id="email" name="email"
-                required><br><br>
+              <input class="input-group__text" type="email" required>
             </div>
-
             <div class="input-group">
               <label class="input-group__label">Password</label>
-              <input class="input-group__text input-group__text--password" type="Password" id="password" name="password"
-                required><br><br>
+              <input class="input-group__text" type="password" required>
             </div>
             <div class="input-group">
               <label class="input-group__label">Confirm Password</label>
-              <input class="input-group__text input-group__text--password" type="Password" id="password" name="password"
-                required><br><br>
+              <input class="input-group__text" type="password" required>
             </div>
-            <div class="Signup-buttons">
-              <input type="submit" value="Login" class="btn btn--primary Signup-buttons__primary-btn--Signup">
-            </div>
+            <button type="submit" class="btn btn--primary signup-buttons__primary-btn--signup">Sign Up</button>
           </form>
+          <!-- Signup form ends here -->
+
         </div>
       </div>
 
     </section>
     <footer class="footer">
       <p class="footer__para">&#169 Content Shark Academy</p>
-      <a class="footer__link" href="www.contentsharkacademy" target="_blank">www.contentsharkacademy.com</a>
+      <a class="footer__link" href="https://www.contentsharkacademy.com" target="_blank">www.contentsharkacademy.com</a>
     </footer>
   </main>
 </body>

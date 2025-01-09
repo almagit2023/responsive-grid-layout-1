@@ -1,3 +1,10 @@
+.toggle-button {
+  position: absolute;
+  z-index: 4;
+  top: 67%;
+  left: 98%;
+}
+
 .toggle-button__checkbox {
   float: right;
   display: none;
@@ -5,8 +12,6 @@
 
 .toggle-button__box {
   position: absolute;
-  left: 75%;
-  top: 79%;
   background-color: var(--dark-grey-color);
   width: 5.4rem;
   height: 3.2rem;
@@ -37,4 +42,24 @@ input:checked+.toggle-button__box {
 
 input:checked+.toggle-button__box::before {
   transform: translateX(2.2rem);
+}
+
+/* .toggle-button__checkbox:checked~.forms .signup-form {
+  transform: translateX(-100%);
+}
+
+.toggle-button__checkbox:checked~.forms .login-form {
+  transform: translateX(0);
+} */
+
+/* When toggled */
+/* When checkbox is checked */
+input:checked~.forms .login-form {
+  transform: translateX(-100%);
+  /* Slide login form off-screen to the left */
+}
+
+input:checked~.forms .signup-form {
+  transform: translateX(0);
+  /* Slide signup form into view */
 }
