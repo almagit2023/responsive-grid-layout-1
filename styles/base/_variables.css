@@ -18,9 +18,12 @@
   --primary-subheading-weight: 400;
 
   --primary-button-background: #007BFF;
+  --supporting-deep-navy: #00003c;
+
   --primary-button-text-color: rgba(255, 255, 255);
   --primary-button-hover-border-color: #003166;
 
   --form-background-color: #ECECEC;
   --dark-grey-color: #6C757D;
+  --neutral-dark-gray-color: #3A3A40;
 }

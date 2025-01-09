@@ -26,7 +26,6 @@
         </div>
 
         <div class="row__col-1-of-3">
-
           <form class="login-form" action="#">
             <h2>Log In</h2>
             <div class="input-group">
@@ -40,13 +39,20 @@
               <input class="input-group__text input-group__text--password" type="Password" id="password" name="password"
                 required><br><br>
             </div>
-
-            <input type="submit" value="Login" class="btn btn--primary login-button">
+            <div class="login-buttons">
+              <input type="submit" value="Login" class="btn btn--primary login-buttons__primary-btn--login">
+              <input type="checkbox" value="toggle" id="check" class="login-buttons__checkbox--toggle">
+              <label for="check" class="login-buttons__box"></label>
+            </div>
           </form>
         </div>
       </div>
 
     </section>
+    <footer class="footer">
+      <p class="footer__para">&#169 Content Shark Academy</p>
+      <a class="footer__link" href="www.contentsharkacademy" target="_blank">www.contentsharkacademy.com</a>
+    </footer>
   </main>
 </body>
 

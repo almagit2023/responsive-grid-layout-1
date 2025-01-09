@@ -1,0 +1,35 @@
+.login-form {
+  position: absolute;
+  z-index: 3;
+  top: 33rem;
+}
+
+.login-form h2 {
+  color: var(--neutral-dark-gray-color);
+}
+
+.input-group {
+  margin-top: 2rem;
+}
+
+.input-group__label {
+  font-size: 1.6rem;
+  color: var(--dark-grey-color);
+}
+
+.login-buttons__primary-btn--login {
+  margin-top: 1.6rem;
+  float: left;
+  display: block;
+}
+
+.login-buttons__checkbox--toggle {
+  float: right;
+  display: block;
+}
+
+.login-buttons__box {
+  background-color: var(--neutral-dark-gray-color);
+  width: 5.4rem;
+  height: 3.2rem;
+}
