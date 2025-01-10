@@ -1,8 +1,5 @@
-.toggle-button {
-  position: absolute;
-  z-index: 4;
-  top: 67%;
-  left: 98%;
+.toggle-container {
+  /* width: 300px; */
 }
 
 .toggle-button__checkbox {
@@ -10,13 +7,41 @@
   display: none;
 }
 
+.toggle-text {
+  position: absolute;
+  z-index: 4;
+  color: var(--primary-button-background);
+  top: 61%;
+  left: 89.5%;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.not-a-member {
+  color: red;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  margin-left: 25px;
+}
+
+.already-a-member {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+
+}
+
 .toggle-button__box {
   position: absolute;
+  top: 60%;
+  left: 100%;
   background-color: var(--dark-grey-color);
   width: 5.4rem;
   height: 3.2rem;
   border-radius: 100px;
   cursor: pointer;
+  z-index: 4;
 }
 
 .toggle-button__box::before {
@@ -30,11 +55,6 @@
   transition: all 0.2s;
 }
 
-.not-a-member {
-  position: relative;
-  left: 68%;
-  font-weight: 500
-}
 
 input:checked+.toggle-button__box {
   background-color: var(--primary-button-background);
@@ -44,22 +64,23 @@ input:checked+.toggle-button__box::before {
   transform: translateX(2.2rem);
 }
 
-/* .toggle-button__checkbox:checked~.forms .signup-form {
-  transform: translateX(-100%);
-}
-
+/* Toggle animation based on checkbox state */
 .toggle-button__checkbox:checked~.forms .login-form {
-  transform: translateX(0);
-} */
-
-/* When toggled */
-/* When checkbox is checked */
-input:checked~.forms .login-form {
-  transform: translateX(-100%);
-  /* Slide login form off-screen to the left */
+  transform: translateX(160%);
 }
 
-input:checked~.forms .signup-form {
-  transform: translateX(0);
-  /* Slide signup form into view */
+.toggle-button__checkbox:checked~.forms .signup-form {
+  transform: translateX(0%);
+}
+
+.not-a-member {
+  opacity: 1;
+}
+
+.toggle-button__checkbox:checked~.not-a-member {
+  opacity: 0;
+}
+
+.toggle-button__checkbox:checked~.already-a-member {
+  opacity: 1;
 }

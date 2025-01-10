@@ -13,7 +13,7 @@
   <main class="background-image">
 
     <!-- Grid Layout -->
-    <section id="grid" lass="grid-layout">
+    <section id="grid" class="grid-layout"> <!-- Fixed typo: "lass" to "class" -->
 
       <div class="row">
         <div class="row__col-2-of-3">
@@ -21,54 +21,57 @@
             <h1 class="row__main-heading">Welcome To Forum-Net</h1>
             <h4 class="row__subheading">Connect with people, Share your thoughts</h4>
           </div>
-          <img src="./assets/svg/network-2.svg" class="svg-network">
+          <img src="./assets/svg/network-2.svg" class="svg-network" alt="Network Illustration">
+          <!-- Added alt attribute for accessibility -->
         </div>
 
         <!-- Toggle Button start -->
-        <div class="toggle-button">
+        <!-- <div class="toggle-button"> -->
+        <div class="row__col-1-of-3 toggle-container">
           <input type="checkbox" id="check" class="toggle-button__checkbox">
+          <span class="toggle-text not-a-member">Not a member?</span>
+          <span class="toggle-text already-a-member">Already a member?</span>
           <label for="check" class="toggle-button__box"></label>
-        </div>
-        <!-- Toggle Button end -->
+          <!-- </div> -->
+          <!-- Toggle Button end -->
 
+          <div class="forms">
 
+            <!-- Login form starts here -->
+            <form class="login-form">
+              <h2>Log In</h2>
+              <div class="input-group">
+                <label class="input-group__label">Email</label>
+                <input class="input-group__text" type="email" required>
+              </div>
+              <div class="input-group">
+                <label class="input-group__label">Password</label>
+                <input class="input-group__text" type="password" required>
+              </div>
+              <button type="submit" class="btn btn--primary login-buttons__primary-btn--login">Login</button>
+            </form>
+            <!-- Login form ends here -->
 
-        <div class="forms row__col-1-of-3">
+            <!-- Signup form starts here -->
+            <form class="signup-form">
+              <h2>Sign Up</h2>
+              <div class="input-group">
+                <label class="input-group__label">Email</label>
+                <input class="input-group__text" type="email" required>
+              </div>
+              <div class="input-group">
+                <label class="input-group__label">Password</label>
+                <input class="input-group__text" type="password" required>
+              </div>
+              <div class="input-group">
+                <label class="input-group__label">Confirm Password</label>
+                <input class="input-group__text" type="password" required>
+              </div>
+              <button type="submit" class="btn btn--primary signup-buttons__primary-btn--signup">Sign Up</button>
+            </form>
+            <!-- Signup form ends here -->
 
-          <!-- Login form starts here -->
-          <form class="login-form">
-            <h2>Log In</h2>
-            <div class="input-group">
-              <label class="input-group__label">Email</label>
-              <input class="input-group__text" type="email" required>
-            </div>
-            <div class="input-group">
-              <label class="input-group__label">Password</label>
-              <input class="input-group__text" type="password" required>
-            </div>
-            <button type="submit" class="btn btn--primary login-buttons__primary-btn--login">Login</button>
-          </form>
-          <!-- Login form ends here -->
-
-          <!-- Signup form starts here -->
-          <form class="signup-form">
-            <h2>Sign Up</h2>
-            <div class="input-group">
-              <label class="input-group__label">Email</label>
-              <input class="input-group__text" type="email" required>
-            </div>
-            <div class="input-group">
-              <label class="input-group__label">Password</label>
-              <input class="input-group__text" type="password" required>
-            </div>
-            <div class="input-group">
-              <label class="input-group__label">Confirm Password</label>
-              <input class="input-group__text" type="password" required>
-            </div>
-            <button type="submit" class="btn btn--primary signup-buttons__primary-btn--signup">Sign Up</button>
-          </form>
-          <!-- Signup form ends here -->
-
+          </div>
         </div>
       </div>
 
